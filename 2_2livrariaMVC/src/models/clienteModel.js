@@ -4,6 +4,7 @@ const tableClientes = /*sql*/ `
     CREATE TABLE IF NOT EXISTS clientes(
         id VARCHAR(60) PRIMARY KEY
         nome VARCHAR(60) NOT NULL,
+        senha VARCHAR(255) NOT NULL,
         email VARCHAR(255) NOT NULL,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
